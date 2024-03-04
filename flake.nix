@@ -4,7 +4,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils, spigot, mavenix, bungeecord, ... }: 
+  outputs = { self, nixpkgs, flake-utils, ... }: 
   let
     sysOut = (flake-utils.lib.eachDefaultSystem (system:
       let
